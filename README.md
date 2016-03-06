@@ -10,3 +10,17 @@ GitStats.exe 'C:\projects\GitStats\' 200 master
 ### Show status for the last 200 commits on your current branch
 GitStats.exe 'C:\projects\GitStats\' 200
 
+```
+FileName	NumberOfTimesChanged	PercentTimesChanged
+xxx\Web.config	15	30.0
+xxx\BLL\Services\Orders\OrderDuplicationService.cs	15	30.0
+xxx\DAO\OrderDAO.cs	11	22.00
+xxx\Payment.aspx.cs	6	12.00
+xxx\OrderLogistics.aspx	5	10.0
+xxx\DAO\GiftCertificateDAO.cs	5	10.0
+xxx\BLL\Services\Payments\GiftCertificate\GiftCertificate.cs	5	10.0
+xxx\Services\Orders.asmx.cs	4	8.00
+xxx\BLL\Services\Cart\CartValidationService.cs	4	8.00
+xxx\BLL\Services\Fees\FeeService.cs	4	8.00
+xxx\UserControls\OrderDetails\CartSummary\ConfirmOrderSummary.ascx	3	6.00
+```
