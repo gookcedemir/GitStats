@@ -1,5 +1,6 @@
 # GitStats
 ## Show code status on your local Git repository
+Currently, this only shows a Brittles report. This is the files that change most often. Likely this indicates areas of fragility in the code. These are good areas for target refactoring, unit testing, and code coverage.
 
 ### Usage
 GitStats.exe <path to local git repo> <commit count> [branch name]
