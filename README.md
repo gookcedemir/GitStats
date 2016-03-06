@@ -10,6 +10,7 @@ GitStats.exe 'C:\projects\GitStats\' 200 master
 ### Show status for the last 200 commits on your current branch
 GitStats.exe 'C:\projects\GitStats\' 200
 
+### Example output
 ```
 FileName	NumberOfTimesChanged	PercentTimesChanged
 xxx\Web.config	15	30.0
