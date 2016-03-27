@@ -10,32 +10,32 @@ namespace GetStats.Lib.Test
 		[TestMethod]
 		public void ConstructorTest()
 		{
-			Brittles brittles = new Brittles(@"C:\Projects\ClearLaunch\TiffsTreats\onlineordering");
-			Assert.IsNotNull(brittles);
+			MostChanged mostChanged = new MostChanged();
+			Assert.IsNotNull(mostChanged);
 		}
 
 		[TestMethod]
 		public void GetBrittlesDefaultTest()
 		{
-			Brittles brittles = new Brittles(@"C:\Projects\ClearLaunch\TiffsTreats\onlineordering");
-			brittles.GetBrittles();
-			Assert.IsNotNull(brittles);
+			MostChanged mostChanged = new MostChanged();
+			mostChanged.Get(@"C:\Projects\ClearLaunch\TiffsTreats\onlineordering");
+			Assert.IsNotNull(mostChanged);
 		}
 
 		[TestMethod]
 		public void GetBrittlesNumCommitsTest()
 		{
-			Brittles brittles = new Brittles(@"C:\Projects\ClearLaunch\TiffsTreats\onlineordering");
-			brittles.GetBrittles(50);
-			Assert.IsNotNull(brittles);
+			MostChanged mostChanged = new MostChanged();
+			mostChanged.Get(@"C:\Projects\ClearLaunch\TiffsTreats\onlineordering",50);
+			Assert.IsNotNull(mostChanged);
 		}
 
 		[TestMethod]
 		public void GetBrittlesBranchTest()
 		{
-			Brittles brittles = new Brittles(@"C:\Projects\ClearLaunch\TiffsTreats\onlineordering");
-			brittles.GetBrittles(50,"master");
-			Assert.IsNotNull(brittles);
+			MostChanged mostChanged = new MostChanged();
+			mostChanged.Get(@"C:\Projects\ClearLaunch\TiffsTreats\onlineordering",50,"master");
+			Assert.IsNotNull(mostChanged);
 		}
 
 

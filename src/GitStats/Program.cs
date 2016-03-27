@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GitStats.Lib;
+using Microsoft.Practices.Unity;
 
 namespace GitStats
 {
@@ -38,8 +39,11 @@ namespace GitStats
 				branch = args[3];
 			}
 
-			Brittles brittles = new Brittles(repo);
-			brittles.GetBrittles(count,branch);
+			IGetStatsCollection collection = GitStats.Lib.Resolver.Instance.Container.Resolve<IGetStatsCollection>();
+			foreach (var stats in collection)
+			{
+				stats.Get(repo, count, branch);
+			}
 			return 0;
 		}
 

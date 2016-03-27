@@ -9,18 +9,22 @@ using LibGit2Sharp;
 
 namespace GitStats.Lib
 {
-    public class Brittles
-    {
-		Dictionary<string,int> lookup = new Dictionary<string, int>();
-	    private Repository repo;
+	public interface IMostChanged : IGetStats
+	{
+	}
 
-		public Brittles(string gitRepo)
+	public class MostChanged : IMostChanged
+	{
+		Dictionary<string, int> lookup = new Dictionary<string, int>();
+		private Repository repo;
+
+		public MostChanged()
 	    {
-			repo = new Repository(gitRepo);
 		}
 
-		public void GetBrittles(int commitsNum = 200, string branch = null)
+		public void Get(string gitRepo, int commitsNum = 200, string branch = null)
 	    {
+			repo = new Repository(gitRepo);
 			var commits = repo.Head.Commits.ToList();
 			if (!string.IsNullOrEmpty(branch))
 			{
@@ -56,6 +60,7 @@ namespace GitStats.Lib
 
 	    public void OutputConsole(IEnumerable<KeyValuePair<string, int>> ordered, int commitsNum)
 	    {
+		    Console.WriteLine("Most Changed");
 		    Console.WriteLine("FileName\tNumberOfTimesChanged\tPercentTimesChanged");
 			foreach (var line in ordered)
 			{
