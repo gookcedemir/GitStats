@@ -1,6 +1,11 @@
 # GitStats
 ## Show code status on your local Git repository
-Currently, this only shows a Brittles report. This is the files that change most often. Likely this indicates areas of fragility in the code. These are good areas for target refactoring, unit testing, and code coverage.
+Currently, this shows a Brittles report. The Brittles report contains three sub-reports:
+
+1. MostChanged - These are the files which change most often. Likely this indicates areas of fragility in the code. These are good areas for target refactoring, unit testing, and code coverage.
+1. MostChanges
+ 1. Adds - The files with the most additions. Be wary of files which grow quickly. You might be putting too much logic in them.
+ 1. Deletes - The files with the most deletions. These are usually good changes and indicate good refactoring practices.
 
 ### Usage
 GitStats.exe <path to local git repo> <commit count> [branch name]
