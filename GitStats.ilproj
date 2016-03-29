@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <!--Switches-->
+  <CopyAttributes Enabled="true" />
+  <UnionDuplicates Enabled="false" />
+  <Debug Enabled="1" />
+  <Internalize Enabled="false" />
+  <MergeXml Enabled="false" />
+  <!--Signing-->
+  <Sign Enabled="false" Delay="false"></Sign>
+  <!--Logging-->
+  <Log Enabled="false"></Log>
+  <!--Assemblies-->
+  <Assemblies>
+    <Assembly>C:\Projects\wbsimms\GitStats\src\GitStats\bin\GitStats.exe</Assembly>
+    <Assembly>C:\Projects\wbsimms\GitStats\src\GitStats\bin\GitStats.Lib.dll</Assembly>
+    <Assembly>C:\Projects\wbsimms\GitStats\src\GitStats\bin\LibGit2Sharp.dll</Assembly>
+    <Assembly>C:\Projects\wbsimms\GitStats\src\GitStats\bin\Microsoft.Practices.ServiceLocation.dll</Assembly>
+    <Assembly>C:\Projects\wbsimms\GitStats\src\GitStats\bin\Microsoft.Practices.Unity.Configuration.dll</Assembly>
+    <Assembly>C:\Projects\wbsimms\GitStats\src\GitStats\bin\Microsoft.Practices.Unity.dll</Assembly>
+    <Assembly>C:\Projects\wbsimms\GitStats\src\GitStats\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll</Assembly>
+    <Assembly />
+    <Assembly />
+    <Primary>C:\Projects\wbsimms\GitStats\src\GitStats\bin\GitStats.exe</Primary>
+  </Assemblies>
+  <!--Output-->
+  <OutputAssembly>C:\Projects\wbsimms\GitStats\GitStats.exe</OutputAssembly>
+  <!--.NET Framework-->
+  <Framework>.NET Framework 4.6 Full</Framework>
+  <!--Merge Engine-->
+  <Engine Name="ILMerge" />
+</Settings>

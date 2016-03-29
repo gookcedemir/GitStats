@@ -26,7 +26,7 @@ namespace GitStats
 			}
 			var repo = args[0];
 			int count;
-			if (Int32.TryParse(args[1], out count))
+			if (!Int32.TryParse(args[1], out count))
 			{
 				Usage();
 				Console.WriteLine("Commit Count is not a number :" + args[1]);
@@ -34,9 +34,9 @@ namespace GitStats
 			}
 
 			string branch = null;
-			if (!string.IsNullOrEmpty(args[3]))
+			if (!string.IsNullOrEmpty(args[2]))
 			{
-				branch = args[3];
+				branch = args[2];
 			}
 
 			IGetStatsCollection collection = GitStats.Lib.Resolver.Instance.Container.Resolve<IGetStatsCollection>();
