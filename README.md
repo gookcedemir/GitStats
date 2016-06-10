@@ -12,12 +12,12 @@ GitStats.exe <path to local git repo> <commit count> [branch name]
 
 ### Show status for the last 200 commits on your master branch
 ```
-GitStats.exe 'C:\projects\GitStats\' 200 master
+GitStats.exe C:\projects\GitStats\ 200 master
 ```
 
 ### Show status for the last 200 commits on your current branch
 ```
-GitStats.exe 'C:\projects\GitStats\' 200
+GitStats.exe C:\projects\GitStats\ 200
 ```
 
 ### Example output
