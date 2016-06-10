@@ -50,8 +50,8 @@ namespace GitStats
 		static void Usage()
 		{
 			Console.WriteLine("Usage: GitStats.exe <path to local git repo> <commit count> [branch name]");
-			Console.WriteLine(@"Example: GitStats.exe 'C:\projects\GitStats\' 200 master");
-			Console.WriteLine(@"Example: GitStats.exe 'C:\projects\GitStats\' 200 // Defaults to your current branch");
+			Console.WriteLine(@"Example: GitStats.exe C:\projects\GitStats\ 200 master");
+			Console.WriteLine(@"Example: GitStats.exe C:\projects\GitStats\ 200 // Defaults to your current branch");
 		}
 	}
 }
